@@ -1,0 +1,97 @@
+---
+title: Edit a game
+description: Edit a game
+---
+
+If you wish to edit the settings of a ready-made game that is online, or one from
+your device, because e.g. you may need to fix something, you disagree with
+the assignments or you just want to make it more meaningful to you, you should
+enter the **Edit Mode**.
+
+## Edit Mode
+
+First, you need to select the specific game if it is from the online examples,
+or load it from your device (see [Load Game](/docs/sorbet/play-the-game#load-your-game)) and then select
+<kbd class="kbd bg-yellow-500 text-black">Edit</kbd> from the top right.
+
+![Edit Game Selection](@/assets/images/sorbet/sorbet_4_1.png)
+_Figure 12: Edit Game Selection_
+
+Then, the game opens in **Design Mode** where you will be able to
+modify the existing game elements, add or remove objects and columns, change
+the display number of the objects, and also the correspondence of classifying them
+into categories.
+
+![Selected game’s table of contents – Edit Mode](@/assets/images/sorbet/sorbet_4_2.png)
+_Figure 13: Selected game’s table of contents – Edit Mode_
+
+For example, when editing the **_Seasonal Fruits_** game , we notice that
+the
+**_apricot_** object is assigned to the **_spring_** category. If you believe that
+it should also belong to the **_summer_** category, you can select the corresponding
+checkbox and either uncheck the **_spring_** checkbox or leave both categories as
+correct, since SorBET allows one-to-many classification.
+
+![Editing the classification assignments](@/assets/images/sorbet/sorbet_4_3.png)
+_Figure 14: Editing the classification assignments_
+
+## Manage Categories
+
+Moreover, you can add a new category e.g. **_All year_**, if some fruits thrive
+in all seasons, by selecting the **Add Category** button in the columns of the
+categories or remove another by selecting one that you don’t think as
+necessary category and delete it e.g. **_Autumn_** (Figure 16).
+
+![Adding a new category in an existing game](@/assets/images/sorbet/sorbet_4_4.png)
+_Figure 15: Adding a new category in an existing game_
+
+![Delete an unwanted category from an existing game](@/assets/images/sorbet/sorbet_4_5.png)
+_Figure 16: Delete an unwanted category from an existing game_
+
+## Manage Objects
+
+### Add or remove objects
+
+You can also delete some of the existing objects by clicking **Delete object**
+button on top of the table rows or add more objects in the game, e.g.
+more of your favorite fruits, using the adjacent **Add object** button.
+
+![Add a new object in an existing game](@/assets/images/sorbet/sorbet_4_6.png)
+_Figure 17: Add a new object in an existing game_
+
+![Delete an unwanted object in an existing game](@/assets/images/sorbet/sorbet_4_7.png)
+_Figure 18: Delete an object in an existing game_
+
+### Object customization
+
+Once you add or modify an object, you can select the object type, i.e. whether it is
+going to be text or image.
+
+If you select the text type, you can type in the textbox the text to appear (it
+supports both Greek and English characters, numbers and special symbols).
+If you select the image type, you can upload an image from your computer that
+will represent the falling object.
+
+<div role="alert" class="alert shadow-lg">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+    <div class="!m-0">The image should already be saved in your device.</div>
+</div>
+
+Moreover, you can modify the number of instances of each object that will appear
+during the gameplay. This means that if e.g. you put the number 3 next to the apricot
+object, three instances of this object will fall during the same game at a random
+time and order.
+
+![Modify an object’s type and number of instances](@/assets/images/sorbet/sorbet_4_8.png)
+*Figure 19: Modify an object’s type and number of instances*
+
+### Play or download the game
+
+After you finish editing the game you can play it online to see how it looks. To do
+so, click <kbd class="kbd bg-green-600 text-white">Play</kbd> at the upper
+right of the screen. You can also download it to your computer in order to edit it later,
+share it with others, or just save it in your archives. To download the game, click
+<kbd class="kbd bg-blue-600 text-white !m-0">Download</kbd> at the upper right of the screen.
+
+![Play or download a game after editing it](@/assets/images/sorbet/sorbet_4_9.png)
+*Figure 20: Play or download a game after editing it*

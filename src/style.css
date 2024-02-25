@@ -1,0 +1,9 @@
+img + em {
+	display: block;
+	text-align: center;
+}
+
+p > img {
+	display: block;
+	margin: 0 auto;
+}
