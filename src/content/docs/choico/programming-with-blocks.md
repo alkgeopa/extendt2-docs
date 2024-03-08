@@ -1,0 +1,96 @@
+---
+title: Programming with Blocks
+desctiption: Programming with Blocks
+---
+
+This section describes the ChoiCo programming environment.
+
+<div role="alert" class="alert">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+  <span>
+    Find a complete list of all ChoiCo commands with detailed descriptions
+    and usage examples at <a href="http://etl.ppp.uoa.gr/choico/blocksEn.html" target="_blank">http://etl.ppp.uoa.gr/choico/blocksEn.html</a>
+    or in the <kbd class="kbd">Help</kbd> drop-down menu, by selecting <b>Blocks Library</b>.
+  </span>
+</div>
+
+The programming environment consists of two parts:
+
+1. the left side-bar
+2. the workspace on the right
+
+The sidebar contains all the available blocks that can be used to design a game.
+
+![Example of a programming environment in ChoiCo](@images/choico/choico_6_1.png)
+_Figure 36: Example of a programming environment in ChoiCo_
+
+While ChoiCo has 3 different "programming" workspaces (initial settings, gameplay
+rules, end rules), there are some differences in the available blocks depending on
+the functionality of each workspace.
+
+Different blocks can be linked together if they have edges that fit, like puzzle
+pieces.
+
+![Example of blocks that can be linked together](@images/choico/choico_6_2.png)
+_Figure 37: Example 1 of blocks that can be linked together_
+
+![Another example of blocks that can be linked together](@images/choico/choico_6_3.png)
+_Figure 38: Example 2 of blocks that can be linked together_
+
+![Example of blocks that cannot be connected](@images/choico/choico_6_4.png)
+_Figure 39: Example of blocks that cannot be connected_
+
+## Delete a block
+
+To **delete** a block or a group of linked blocks, you can do one of the following:
+
+-  Right-click on it and select "Delete block"
+
+![Delete block(s) with right-click](@images/choico/choico_6_5.png)
+_Figure 40: Delete block(s) with right-click_
+
+- Drag and drop it into the bin in the bottom right corner
+
+![Delete block(s) using the bin](@images/choico/choico_6_6.png)
+_Figure 41: Delete block(s) using the bin_
+
+- Drag and drop it to the sidebar
+
+![Delete block(s) using the sidebar](@images/choico/choico_6_7.png)
+_Figure 42: Delete block(s) using the sidebar_
+
+## Copy a block
+
+To copy a block or a group of blocks, right-click on it and select
+**Duplicate**.
+
+![Copy block(s)](@images/choico/choico_6_8.png)
+_Figure 43: Copy block(s)_
+
+## Disable a block
+
+To disable a block or a group of connected blocks, you need to right-click on it and
+select **Disable Block**. The blocks will appear as disabled in the workspace and will
+not be executed. You can enable it again by right-clicking and selecting
+**Enable Block**.
+
+![Disable a block](@images/choico/choico_6_9.png)
+![Enable a block](@images/choico/choico_6_10.png)
+_Figure 44: Disable/Enable block(s)_
+
+## Collapse a block
+
+To collapse a block or a group of connected blocks, you need to right-click on it
+and select **Collapse block**. The blocks will be collapsed and represented by a single
+block. You can expand the block again by right clicking on the individual block and
+selecting **Expand block**.
+
+This is a very useful function if you want to save space.
+
+![Collapse a block](@images/choico/choico_6_11.png)
+![Expand a block](@images/choico/choico_6_12.png)
+
+## Undo
+
+You can undo the last action by pressing <kbd class="kbd kbd-sm">ctrl</kbd> + <kbd class="kbd kbd-sm">z</kbd>
+(or <kbd class="kbd kbd-sm">⌘</kbd> + <kbd class="kbd kbd-sm">z</kbd> in macOS).
