@@ -1,4 +1,4 @@
-# Exten(DT)²
+# Exten(DT)² Docs
 
 Documentation of the Exten(DT)² platform and the tools that it uses.
 
