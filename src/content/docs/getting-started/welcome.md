@@ -18,7 +18,7 @@ You can access all these groups from the left sidebar.
 _Sidebar with grouped content_
 
 Some of the content may not be ready yet. Incomplete pages are marked with an appropriate badge.
-![Incomplete pages showing that they are currently being written](image.png)
+![Incomplete pages showing that they are currently being written](@images/getting-started/start_5.png)
 _Incomplete pages showing that they are currently being written_
 
 The main content of the page sits in the middle
