@@ -4,7 +4,7 @@ description: Guide for institution administrators for the Exten(DT)² platform
 ---
 
 Administrators are users responsible for managing the participating members of
-their educational institutuion. These members are educators and learners. An administrator
+their educational institution. These members are educators and learners. An administrator
 can add, delete or edit their institution members.
 
 ## Registering
@@ -14,7 +14,7 @@ The first time you visit the Exten(DT)² platform you will be greeted by the log
 ![Login screen of the Exten(DT)² platform](@images/extendt2/ext_login_1.png)
 _Login screen of the Exten(DT)² platform_
 
-By clicking <kbd class="kbd text-[#362f78] font-bold">Login</kbd> the three user role specific buttons appear
+By clicking <kbd class="kbd font-bold">Login</kbd> the three user role specific buttons appear
 
 ![The options for the three user roles](@images/extendt2/ext_login_2.png)
 _The options for the three user roles_
@@ -35,7 +35,7 @@ Enter the name of your institution and a valid e-mail address.
   <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
   <span class="leading-tight">
     It is important to enter a <b>valid e-mail address</b> you have access to as in this address you will
-    recieve a confirmation message with information on how to access your newly created account.
+    receive a confirmation message with information on how to access your newly created account.
   </span>
 </div>
 
@@ -49,10 +49,10 @@ A message will appear suggesting you verify your email address.
 _Message prompting you to verify your e-mail address_
 
 ![Confirmation e-mail](@images/extendt2/ext_conf_email.png)
-_Confirmation e-mail you will recieve_
+_Confirmation e-mail you will receive_
 
-Follow the instructions on the e-mail message you recieved. After you have all the
-necessary info you can proceed to loging in as administrator.
+Follow the instructions on the e-mail message you received. After you have all the
+necessary info you can proceed to logging in as administrator.
 
 <div class="alert alert-warning">
   <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
@@ -62,9 +62,9 @@ necessary info you can proceed to loging in as administrator.
   </span>
 </div>
 
-## Loging in
+## Logging in
 
-As before, at the login page, select <kbd class="kbd text-[#362f78] font-bold">Login</kbd>,
+As before, at the login page, select <kbd class="kbd font-bold">Login</kbd>,
 then <kbd class="kbd bg-[#543b8a] text-white"><img src="/docs/img/admin.png" class="!h-4 mr-2"/>ADMINISTRATOR</kbd>
 and then <kbd class="kbd bg-[#362f78] text-white">Login</kbd>.
 
@@ -97,7 +97,7 @@ Fill all the fields with the appropriate information. Enter the educators e-mail
   <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
   <span class="leading-tight">
     In the <code>Educator ID</code> field you need to enter a valid e-mail address that the educator has access to.
-    <strong>They will recieve all the necessary information on that address!</strong>
+    <strong>They will receive all the necessary information on that address!</strong>
   </span>
 </div>
 
@@ -106,20 +106,20 @@ _Add educator page_
 
 Click <kbd class="kbd bg-[#362f78] text-white">Save</kbd> to add the new educator.
 
-Now, your newly added educator should appear in the the **Registerd Educators** page.
+Now, your newly added educator should appear in the the **Registered Educators** page.
 For each educator that is created an appropriate educator account is created.
 See more at the [Educator](/docs/extendt2/educator) page.
-![First edicator entry](@images/extendt2/ext_admin_edu_first.png)
+![First educator entry](@images/extendt2/ext_admin_edu_first.png)
 
 Notice that initially every educator is unverified.
-**They need to verify their account by following the instruction on the email they recieve in order
+**They need to verify their account by following the instruction on the email they receive in order
 for the registration to be completed.**
 If not, they cannot access their educator account.
 
 <div class="alert alert-warning">
   <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
   <span class="leading-tight">
-    The confirmation email the educators recieve contains information on how to get their credentials.<br>
+    The confirmation email the educators receive contains information on how to get their credentials.<br>
     <strong>Urge them to pay attention to it!</strong>
   </span>
 </div>
@@ -139,7 +139,7 @@ _Learner creation page_
 
 Click <kbd class="kbd bg-[#362f78] text-white">Save</kbd> to add the new leaner.
 
-Now, your newly added learner should appear in the the **Registerd Learners** page.
+Now, your newly added learner should appear in the the **Registered Learners** page.
 For each learner that is created an appropriate learner account is created.
 See more at the [Learner](/docs/extendt2/learner) page.
 ![First learner entry](@images/extendt2/ext_admin_lea_first.png)

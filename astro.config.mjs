@@ -2,15 +2,17 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import tailwind from '@astrojs/tailwind';
 
+import { loadEnv } from "vite";
+const env = loadEnv("", process.cwd());
+
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
 		starlight({
 			customCss: ['./src/style.css'],
-			title: 'Exten(DT)² Documentation',
+			title: 'Exten(DT)² Guides & Documentation',
 			logo: { src: '@/assets/images/logo.svg', replacesTitle: true },
 			social: {
-				email: 'mailto:extendt2@gmail.com',
 				twitter: 'https://twitter.com/extendt2',
 				linkedin: 'https://www.linkedin.com/company/extend-t-2/',
 				youtube:
@@ -98,7 +100,6 @@ export default defineConfig({
 	},
 	outDir: './docs',
 	output: 'static',
-	site: 'https://extendt2.com',
 	base: '/docs',
 	vite: {
 		resolve: {
