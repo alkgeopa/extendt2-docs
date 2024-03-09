@@ -1,6 +1,6 @@
 ---
 title: Welcome
-description: Guide on how to use the Exten(DT)² platform documentation
+description: Guide on how to use the Exten(DT)² platform's documentation
 ---
 
 The Exten(DT)² platform is an ecosystem of diverse web-based learning environments and
