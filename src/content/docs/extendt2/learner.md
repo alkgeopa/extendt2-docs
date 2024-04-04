@@ -50,8 +50,9 @@ After successfully logging in, you should see the **Learner Panel** page.
 _Learner Panel_
 
 From here, you can:
-- view the **groups** you are a member of and
-- view the **activities** assigned to you
+
+-   view the **groups** you are a member of and
+-   view the **activities** assigned to you
 
 ## Groups
 
@@ -63,9 +64,10 @@ _List of all groups the learners is a member of_
 
 In the **Activities** page you can view all the activities that are assigned to you.
 These are grouped into three tabs:
-- **To Do**: Activities that you have not started yet.
-- **In Progress**: Activities that you have started and have saved your progress.
-- **Completed**: Activities that you have marked as completed.
+
+-   **To Do**: Activities that you have not started yet.
+-   **In Progress**: Activities that you have started and have saved your progress.
+-   **Completed**: Activities that you have marked as completed.
 
 ![To Do activities tab](@images/extendt2/ext_lea_todo.png)
 _To Do activities tab_
@@ -79,4 +81,58 @@ _Completed activities tab_
 ### To Do / In Progress
 
 In the **To Do** tab, click <kbd class="kbd">Start</kbd> to get started with an activity.
-In the **In Progress** tab click <kbd class="kbd">Continue</kbd> to continue your work from where you left it.
+In the **In Progress** tab click <kbd class="kbd">Continue</kbd> to continue from where you left off.
+
+The activity window opens and you can work on your activity.
+
+![The activity page](@images/extendt2/ext_lea_activity.png)
+_The activity page_
+
+On the top right of the activity page there is a group of buttons, each of with can perform certain actions.
+
+In detail:
+
+<kbd class="kbd bg-[#4a4284] text-white">Activity Instructions</kbd>
+Click here to view the instructions the educator has written for the activity
+
+<kbd class="kbd bg-[#ffc107]">Load & Share</kbd>
+Click here to load and/or copy the link of any saved version of the activity
+
+<kbd class="kbd bg-[#28a745] text-white">Check</kbd>
+...
+
+<kbd class="kbd bg-[#dc3545] text-white">Save</kbd>
+Click here to save what you have done so far. Every time you save, you create a new
+version of the activity that is accessible only by you.
+
+<kbd class="kbd bg-[#6843b8] text-white">Help</kbd>
+...
+
+<kbd class="kbd bg-[#4a4284] text-white">Close</kbd>
+Closes the activity. **Be careful**, make sure you **save before closing** the activity
+by clicking the <kbd class="kbd kbd-sm bg-[#dc3545] text-white">Save</kbd> button.
+
+If you save your activity, you will notice it has been move to the **In Progress** tab
+
+![Activities in progress](@images/extendt2/ext_lea_inpro_act.png)
+_Activities in progress_
+
+Every activity in the **In Progress** tab can be marked completed by clicking
+<kbd class="kbd font-bold">Mark as completed</kbd>.
+
+<div class="alert alert-warning">
+  <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+  <span class="leading-tight">
+    You will not be able to participate in the activity or edit your previous work anymore if you
+    mark it as completed.
+  </span>
+</div>
+
+### Completed
+
+After you mark an activity as completed it will be moved to the **Completed** tab.
+From them you can copy the link of the final version of you work on that activity and
+share it freely.
+
+![Completed activities tab](@images/extendt2/ext_lea_com_act.png)
+_Completed activities tab_

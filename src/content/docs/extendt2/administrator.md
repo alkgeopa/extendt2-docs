@@ -34,8 +34,8 @@ Enter the name of your institution and a valid e-mail address.
 <div class="alert alert-warning">
   <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
   <span class="leading-tight">
-    It is important to enter a <b>valid e-mail address</b> you have access to as in this address you will
-    receive a confirmation message with information on how to access your newly created account.
+	It is important to enter a <b>valid e-mail address</b> you have access to as in this address you will
+	receive a confirmation message with information on how to access your newly created account.
   </span>
 </div>
 
@@ -57,8 +57,8 @@ necessary info you can proceed to logging in as administrator.
 <div class="alert alert-warning">
   <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
   <span class="leading-tight">
-    Your confirmation email contains information on how to get your credentials.<br>
-    <strong>Pay attention to it!</strong>
+	Your confirmation email contains information on how to get your credentials.<br>
+	<strong>Pay attention to it!</strong>
   </span>
 </div>
 
@@ -94,11 +94,11 @@ Fill all the fields with the appropriate information. Enter the educators e-mail
 **Educator ID** field.
 
 <div class="alert alert-warning">
-  <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
-  <span class="leading-tight">
-    In the <code>Educator ID</code> field you need to enter a valid e-mail address that the educator has access to.
-    <strong>They will receive all the necessary information on that address!</strong>
-  </span>
+	<svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+	<span class="leading-tight">
+		In the <code class="dark:text-base-content">Educator ID</code> field you need to enter a valid e-mail address that the educator has access to.
+		<strong>They will receive all the necessary information on that address!</strong>
+	</span>
 </div>
 
 ![Add educator form page](@images/extendt2/ext_admin_edu_create.png)
@@ -119,8 +119,8 @@ If not, they cannot access their educator account.
 <div class="alert alert-warning">
   <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
   <span class="leading-tight">
-    The confirmation email the educators receive contains information on how to get their credentials.<br>
-    <strong>Urge them to pay attention to it!</strong>
+	The confirmation email the educators receive contains information on how to get their credentials.<br>
+	<strong>Urge them to pay attention to it!</strong>
   </span>
 </div>
 
@@ -148,6 +148,6 @@ _First learner entry_
 <div class="alert">
   <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
   <span class="leading-tight">
-    Learner/Team ID is the ticket to the Exten(DT)² Platform. Make sure you or the educator shares the ID to the respective learner(s).
+	Learner/Team ID is the ticket to the Exten(DT)² Platform. Make sure you or the educator shares the ID to the respective learner(s).
   </span>
 </div>

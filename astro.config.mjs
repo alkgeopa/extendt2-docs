@@ -2,21 +2,22 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import tailwind from '@astrojs/tailwind';
 
-import { loadEnv } from "vite";
-const env = loadEnv("", process.cwd());
-
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
 		starlight({
 			customCss: ['./src/style.css'],
 			title: 'Exten(DT)² Guides & Documentation',
+			description: 'Guides and documentation for the Exten(DT)² platform, the various games and tools, and how to use them.',
 			logo: { src: '@/assets/images/logo.svg', replacesTitle: true },
 			social: {
 				twitter: 'https://twitter.com/extendt2',
 				linkedin: 'https://www.linkedin.com/company/extend-t-2/',
 				youtube:
 					'https://www.youtube.com/channel/UCf5hTi82TXaL01pSAGnq6Dg/about',
+			},
+			editLink: {
+				baseUrl: 'https://github.com/alkgeopa/extendt2-docs/edit/main/',
 			},
 			sidebar: [
 				{
@@ -37,12 +38,10 @@ export default defineConfig({
 						{
 							label: 'Educator',
 							link: '/extendt2/educator',
-							badge: { text: 'Being written...', variant: 'note' },
 						},
 						{
 							label: 'Learner',
 							link: '/extendt2/learner',
-							badge: { text: 'Being written..', variant: 'note' },
 						},
 					],
 				},
