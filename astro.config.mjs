@@ -2,14 +2,20 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import tailwind from '@astrojs/tailwind';
 
+import partytown from '@astrojs/partytown';
+
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
 		starlight({
-			customCss: ['./src/style.css'],
+			customCss: ['./src/style.css', './src/styles/cookieconsent.css'],
 			title: 'Exten(DT)² Guides & Documentation',
-			description: 'Guides and documentation for the Exten(DT)² platform, the various games and tools, and how to use them.',
-			logo: { src: '@/assets/images/logo.svg', replacesTitle: true },
+			description:
+				'Guides and documentation for the Exten(DT)² platform, the various games and tools, and how to use them.',
+			logo: {
+				src: '@/assets/images/logo.svg',
+				replacesTitle: true,
+			},
 			social: {
 				twitter: 'https://twitter.com/extendt2',
 				linkedin: 'https://www.linkedin.com/company/extend-t-2/',
@@ -22,7 +28,9 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Getting Started',
-					autogenerate: { directory: 'getting-started' },
+					autogenerate: {
+						directory: 'getting-started',
+					},
 				},
 				{
 					label: 'Exten(DT)² Platform',
@@ -52,12 +60,18 @@ export default defineConfig({
 							label: 'Introduction to SorBET',
 							link: '/sorbet/introduction',
 						},
-						{ label: 'Home Page', link: '/sorbet/home-page' },
+						{
+							label: 'Home Page',
+							link: '/sorbet/home-page',
+						},
 						{
 							label: 'Play the game',
 							link: '/sorbet/play-the-game',
 						},
-						{ label: 'Edit a game', link: '/sorbet/edit-a-game' },
+						{
+							label: 'Edit a game',
+							link: '/sorbet/edit-a-game',
+						},
 						{
 							label: 'Design a game',
 							link: '/sorbet/design-a-game',
@@ -75,10 +89,22 @@ export default defineConfig({
 							label: 'Introduction to ChoiCo',
 							link: '/choico/introduction',
 						},
-						{ label: 'Home Page', link: '/choico/home-page' },
-						{ label: 'Play Mode', link: '/choico/play-mode' },
-						{ label: 'Design Mode', link: '/choico/design-mode' },
-						{ label: 'Edit Mode', link: '/choico/edit-mode' },
+						{
+							label: 'Home Page',
+							link: '/choico/home-page',
+						},
+						{
+							label: 'Play Mode',
+							link: '/choico/play-mode',
+						},
+						{
+							label: 'Design Mode',
+							link: '/choico/design-mode',
+						},
+						{
+							label: 'Edit Mode',
+							link: '/choico/edit-mode',
+						},
 						{
 							label: 'Programming with Blocks',
 							link: '/choico/programming-with-blocks',
@@ -86,13 +112,53 @@ export default defineConfig({
 						{
 							label: 'Choico Blocks',
 							link: '/choico/choico-blocks',
-							badge: { text: 'Being written...', variant: 'note' },
+							badge: {
+								text: 'Being written...',
+								variant: 'note',
+							},
 						},
 					],
 				},
 			],
+			head: [
+				{
+					tag: 'script',
+					attrs: {
+						src: 'https://www.googletagmanager.com/gtag/js?id=G-NKGZNDWRDW',
+						async: true,
+						type: 'text/plain',
+						'data-category': 'analytics',
+						'data-service': 'Google Analytics',
+					},
+				},
+				{
+					tag: 'script',
+					attrs: {
+						src: '/docs/scripts/gtag.js',
+						type: 'text/plain',
+						'data-category': 'analytics',
+						'data-service': 'Google Analytics',
+					},
+				},
+				{
+					tag: 'script',
+					attrs: {
+						src: '/docs/scripts/cookieconsent-config.js',
+						type: 'module',
+					},
+				},
+			],
+			components: {
+				// Override the default `SocialIcons` component.
+				Footer: './src/components/footer.astro',
+			},
 		}),
 		tailwind(),
+		// partytown({
+		// 	config: {
+		// 		forward: ['dataLayer.push'],
+		// 	},
+		// }),
 	],
 	redirects: {
 		'/': '/docs/getting-started/welcome',
@@ -104,6 +170,8 @@ export default defineConfig({
 		resolve: {
 			alias: {
 				'@': '/src',
+				'@scripts': '/src/scripts',
+				'@styles': '/src/styles',
 				'@images': '/src/assets/images',
 			},
 		},
