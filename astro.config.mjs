@@ -119,6 +119,17 @@ export default defineConfig({
 						},
 					],
 				},
+
+ {
+					label: ‘Dashboard’,
+					items: [
+						{
+							label: 'Introduction to Dashboard,
+							link: ‘/dashboard/introduction',
+						},
+						
+					],
+			   },
 			],
 			head: [
 				{
