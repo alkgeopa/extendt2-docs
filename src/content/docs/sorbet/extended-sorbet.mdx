@@ -3,18 +3,19 @@ title: The Extended SorBET
 description: The Extended SorBET
 ---
 
-import { Image } from 'astro:assets'
-import leftRight from '@/assets/images/sorbet/sorbet_6_4.png'
-import gameplayTab from '@/assets/images/sorbet/sorbet_6_7.png'
-import blocklyScore from '@/assets/images/sorbet/sorbet_6_8.png'
-import blocklySpeed from '@/assets/images/sorbet/sorbet_6_9.png'
-import addBlock from '@/assets/images/sorbet/sorbet_6_10.png'
-import deleteBlock from '@/assets/images/sorbet/sorbet_6_11.png'
-import copyBlock from '@/assets/images/sorbet/sorbet_6_12.png'
+import { Image } from 'astro:assets';
+import { Aside } from '@astrojs/starlight/components';
+import leftRight from '@/assets/images/sorbet/sorbet_6_4.png';
+import gameplayTab from '@/assets/images/sorbet/sorbet_6_7.png';
+import blocklyScore from '@/assets/images/sorbet/sorbet_6_8.png';
+import blocklySpeed from '@/assets/images/sorbet/sorbet_6_9.png';
+import addBlock from '@/assets/images/sorbet/sorbet_6_10.png';
+import deleteBlock from '@/assets/images/sorbet/sorbet_6_11.png';
+import copyBlock from '@/assets/images/sorbet/sorbet_6_12.png';
 
 SorBET was extended to enhance game play and game design experience, as part
 of the EU project Extending Design Thinking with Emerging Digital Technologies
-(Exten(DT)2).
+(Exten(DT)<sup>2</sup>).
 
 You can find the extended version <a href="https://extendt2.com/widgets/sorbetEXT/" target="_blank">here</a>.
 
@@ -43,61 +44,31 @@ the request to use the camera and microphone. Click on <kbd class="kbd">Allow</k
 ![Website’s request for camera access](@images/sorbet/sorbet_6_2.png)
 _Figure 33: Website’s request for camera access_
 
-<div role="alert" class="alert shadow-lg">
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        class="h-6 w-6 shrink-0 stroke-info"
-    >
-        <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-        ></path>
-    </svg>
-    <div class="!m-0">
-        <span class="inline">If you do not wish to use this extension,</span>
-        <span>simply open a game with the </span>
-        <span class="inline-flex items-center gap-2 rounded bg-green-400 px-2 text-black">
-            <span class="mb-[2px]">camera</span>
-            <span
-                class="rouded-sm size-3 select-none border border-gray-500 bg-white"
-                aria-label="checkbox"
-            ></span>
-        </span>
-        <span>unchecked and the mouse manipulation will operate as usual.</span>
-    </div>
-</div>
+<Aside>
+	<span class="inline">If you do not wish to use this extension,</span>
+	<span>simply open a game with the </span>
+	<span class="inline-flex items-center gap-2 rounded bg-green-400 px-2 text-black">
+		<span class="mb-[2px]">camera</span>
+		<span
+			class="rouded-sm size-3 select-none border border-gray-500 bg-white"
+			aria-label="checkbox"
+		></span>
+	</span>{' '}
+	<span>unchecked and the mouse manipulation will operate as usual.</span>
+</Aside>
 
 ## Play an EXT game
 
-<div role="alert" class="alert shadow-lg">
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        class="h-6 w-6 shrink-0 stroke-info"
-    >
-        <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-        ></path>
-    </svg>
-    <div class="!m-0">
-        <span class="inline-flex items-center gap-2 rounded bg-green-400 px-2 text-black">
-            <span class="mb-[2px]">background</span>
-            <span
-                class="rouded-sm size-3 select-none border border-gray-500 bg-white"
-                aria-label="checkbox"
-            ></span>
-        </span>{' '}
-        <span>Enable or disable the colorful backdrop during gameplay.</span>
-    </div>
-</div>
+<Aside>
+	<span class="inline-flex items-center gap-2 rounded bg-green-400 px-2 text-black">
+		<span class="mb-[2px]">background</span>
+		<span
+			class="rouded-sm size-3 select-none border border-gray-500 bg-white"
+			aria-label="checkbox"
+		></span>
+	</span>{' '}
+	<span>Enable or disable the colorful backdrop during gameplay.</span>
+</Aside>
 
 Once the game loads, click <kbd class="kbd bg-green-500 text-white">START</kbd>
 and try moving your hands in front of the camera and see its digital depiction on
@@ -107,54 +78,38 @@ the game screen. The system recognizes up to 2 palms at a time.
 _Figure 34: 2 digital palms manipulating the falling objects_
 
 <div class="flex flex-col flex-nowrap items-center gap-x-4 sm:flex-row">
-    <div>
-        To move a falling object, simply place your hand over it and push it
-        towards the direction you desire. You can only move it on the x axis.
-    </div>
-    <Image
-        src={leftRight}
-        alt="moving objects left and right"
-        height="120"
-        width="120"
-        class="shadow-xl"
-    />
+	<div>
+		To move a falling object, simply place your hand over it and push it
+		towards the direction you desire. You can only move it on the x axis.
+	</div>
+	<Image
+		src={leftRight}
+		alt="moving objects left and right"
+		height="120"
+		width="120"
+		class="shadow-xl"
+	/>
 </div>
 
-<div role="alert" class="alert shadow-lg">
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        class="h-6 w-6 shrink-0 stroke-info"
-    >
-        <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-        ></path>
-    </svg>
-    <div class="not-content">
-        <div class="text-lg font-bold">Keep in mind</div>
-        <div class="!m-0">
-            In order to ensure that the hand recognition through your camera
-            works as accurately as possible:
-            <ul class="list-disc pl-4">
-                <li>
-                    there must be <b>sufficient lighting</b>
-                </li>
-                <li>
-                    your hands must be <b>close to the camera</b> and{' '}
-                    <b>pointed towards it</b>
-                </li>
-            </ul>
-            <span class="text-xs leading-none">
-                The filed of view of a typical laptop's webcam can vary
-                depending on the specific make and model of the laptop.
-            </span>
-        </div>
-    </div>
-</div>
+<Aside>
+	<div class="!m-0">
+		In order to ensure that the hand recognition through your camera works
+		as accurately as possible:
+		<ul class="list-disc pl-4">
+			<li>
+				there must be <b>sufficient lighting</b>
+			</li>
+			<li>
+				your hands must be <b>close to the camera</b> and{' '}
+				<b>pointed towards it</b>
+			</li>
+		</ul>
+		<span class="text-xs leading-none italic">
+			*The filed of view of a typical webcam can vary depending on the
+			specific make and model.
+		</span>
+	</div>
+</Aside>
 
 ## Edit an EXT game
 
@@ -185,143 +140,113 @@ The initial values already set by the game are **50** for speed and **34** for d
 Thus, choosing **lower values decreases** the speed or density respectively, and
 choosing **higher values increases** them.
 
-<div role="alert" class="alert shadow-lg">
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        class="h-6 w-6 shrink-0 stroke-info"
-    >
-        <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-        ></path>
-    </svg>
-    <div class="not-content leading-normal">
-        <p>
-            Keep in mind that these values are not absolute but relative to the
-            previous value of the variables.
-        </p>
-        <p>
-            E.g. if you set density level to 100 it won’t show all the objects
-            together at once but with a higher rate than they would if the level
-            was 34.
-        </p>
-        <ul class="mt-1 list-disc pl-4 font-bold">
-            <li>
-                avoid using zero (0) as a value, as it will not affect the sizes
-            </li>
-            <li>all numbers should be positive</li>
-        </ul>
-    </div>
-</div>
+<Aside>
+	<p>
+		Keep in mind that these values are not absolute but relative to the
+		previous value of the variables.
+	</p>
+	<p>
+		E.g. if you set density level to 100 it won’t show all the objects
+		together at once but with a higher rate than they would if the level was
+		34.
+	</p>
+	<ul class="mt-1 list-disc pl-4 font-bold">
+		<li>
+			avoid using zero (0) as a value, as it will not affect the sizes
+		</li>
+		<li>all numbers should be positive</li>
+	</ul>
+</Aside>
 
 ### Gameplay Tab
 
 <div class="flex flex-col items-center gap-x-4 sm:flex-row">
-    <Image
-        src={gameplayTab}
-        alt="Gameplay Tab"
-        height="300"
-        width="300"
-        class="shadow"
-    />
-    <div role="alert" class="alert !mt-0 shadow-lg">
-        <div class="not-content leading-normal">
-            <span class="text-lg font-bold">Keep in mind that:</span>
-            <ul class="mt-1 list-disc pl-4">
-                <li>
-                    <span class="font-bold text-blue-600">change ... by</span>{' '}
-                    will increase the current size by the amount you specify
-                    (e.g. change speed by 10, will add 10 to the previous value
-                    of speed)
-                </li>
-                <li>
-                    <span class="font-bold text-blue-600">set ... by</span> sets
-                    a specific value (e.g. set speed to 100, will replace
-                    whatever value the speed had before with 100)
-                </li>
-            </ul>
-        </div>
-    </div>
+	<Image
+		src={gameplayTab}
+		alt="Gameplay Tab"
+		height="300"
+		width="300"
+		class="shadow"
+	/>
+	<div role="alert" class="alert !mt-0 shadow-lg rounded-none">
+		<div class="not-content leading-normal">
+			<span class="text-lg font-bold">Keep in mind that:</span>
+			<ul class="mt-1 list-disc pl-4">
+				<li>
+					<span class="font-bold text-blue-600">change ... by</span>{' '}
+					will increase the current size by the amount you specify
+					(e.g. change speed by 10, will add 10 to the previous value
+					of speed)
+				</li>
+				<li>
+					<span class="font-bold text-blue-600">set ... by</span> sets
+					a specific value (e.g. set speed to 100, will replace
+					whatever value the speed had before with 100)
+				</li>
+			</ul>
+		</div>
+	</div>
 </div>
 
 In the second tab, you can set a **condition** <code>If..else</code> that has to be satisfied in
 order to **alter the value of a variable** (speed or density).
 
 <div class="grid grid-cols-1 items-center gap-4 sm:grid-cols-2">
-    <span>
-        e.g. As the <b>score increases</b>, set a <b>higher speed</b> for the
-        falling objects:
-    </span>
-    <Image
-        src={blocklyScore}
-        alt="blockly score"
-        height="300"
-        width="300"
-        class="shadow-lg"
-    />
-    <span>
-        Or when the <b>speed is too high, decrease the density</b> of objects:
-    </span>
-    <Image
-        src={blocklySpeed}
-        alt="blockly speed"
-        height="300"
-        width="300"
-        class="shadow-lg"
-    />
+	<span>
+		e.g. As the <b>score increases</b>, set a <b>higher speed</b> for the
+		falling objects:
+	</span>
+	<Image
+		src={blocklyScore}
+		alt="blockly score"
+		height="300"
+		width="300"
+		class="shadow-lg"
+	/>
+	<span>
+		Or when the <b>speed is too high, decrease the density</b> of objects:
+	</span>
+	<Image
+		src={blocklySpeed}
+		alt="blockly speed"
+		height="300"
+		width="300"
+		class="shadow-lg"
+	/>
 </div>
 
 ## Programming Commands using Blockly
 
 <div class="not-content mb-16 grid grid-cols-1 items-center gap-x-4 gap-y-8 sm:grid-cols-2">
-    <div>
-        <div class="font-bold">Add a new block</div>
-        Click on the block you want from the blocks library and drop it in the position
-        you want into the programming area.
-    </div>
-    <Image src={addBlock} alt="blockly score" height="300" width="300" />
-    <div>
-        <div class="font-bold">Delete a block</div>
-        To Delete a block or a set of connected blocks, you can either
-        <ul class="list-disc pl-4">
-            <li>
-                Right click on it and select <b>Delete block</b> <em>OR</em>
-            </li>
-            <li>
-                Drag it and drop it to the blocks library on the left of the
-                screen
-            </li>
-        </ul>
-    </div>
-    <Image src={deleteBlock} alt="blockly speed" height="300" width="300" />
-    <div>
-        <div class="font-bold">Copy a block</div>
-        To copy a single block or a set of connected blocks right click on it/them
-        and select <b>Duplicate</b>
-    </div>
-    <Image src={copyBlock} alt="blockly speed" height="300" width="300" />
+	<div>
+		<div class="font-bold">Add a new block</div>
+		Click on the block you want from the blocks library and drop it in the
+		position you want into the programming area.
+	</div>
+	<Image src={addBlock} alt="blockly score" height="300" width="300" />
+	<div>
+		<div class="font-bold">Delete a block</div>
+		To Delete a block or a set of connected blocks, you can either
+		<ul class="list-disc pl-4">
+			<li>
+				Right click on it and select <b>Delete block</b> <em>OR</em>
+			</li>
+			<li>
+				Drag it and drop it to the blocks library on the left of the
+				screen
+			</li>
+		</ul>
+	</div>
+	<Image src={deleteBlock} alt="blockly speed" height="300" width="300" />
+	<div>
+		<div class="font-bold">Copy a block</div>
+		To copy a single block or a set of connected blocks right click on
+		it/them and select <b>Duplicate</b>
+	</div>
+	<Image src={copyBlock} alt="blockly speed" height="300" width="300" />
 </div>
 
-<div role="alert" class="alert">
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        class="h-6 w-6 shrink-0 stroke-info"
-    >
-        <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-        ></path>
-    </svg>
-    <span>
-        Find more information about dragging, dropping and connecting blocks{' '}
-        <a href="http://etl.ppp.uoa.gr/choico/blocksEn.html">here</a>
-    </span>
-</div>
+<Aside>
+	Find more information about dragging, dropping and connecting blocks{' '}
+	<a href="http://etl.ppp.uoa.gr/choico/blocksEn.html" class="font-bold">here</a>
+</Aside>

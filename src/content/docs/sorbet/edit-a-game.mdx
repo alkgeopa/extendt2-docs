@@ -3,6 +3,8 @@ title: Edit a game
 description: Edit a game
 ---
 
+import { Aside } from '@astrojs/starlight/components';
+
 If you wish to edit the settings of a ready-made game that is online, or one from
 your device, because e.g. you may need to fix something, you disagree with
 the assignments or you just want to make it more meaningful to you, you should
@@ -72,10 +74,9 @@ supports both Greek and English characters, numbers and special symbols).
 If you select the image type, you can upload an image from your computer that
 will represent the falling object.
 
-<div role="alert" class="alert shadow-lg">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-    <div class="!m-0">The image should already be saved in your device.</div>
-</div>
+<Aside>
+    The image should already be saved in your device.
+</Aside>
 
 Moreover, you can modify the number of instances of each object that will appear
 during the gameplay. This means that if e.g. you put the number 3 next to the apricot

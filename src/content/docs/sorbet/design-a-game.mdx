@@ -3,6 +3,8 @@ title: Design a game
 description: Design a game
 ---
 
+import { Aside } from '@astrojs/starlight/components';
+
 If you wish to create a classification game from scratch, you can select
 <kbd class="kbd">Design a Game</kbd> from the [Homepage](/docs/sorbet/home-page).
 
@@ -70,10 +72,9 @@ your device's file management window appears, from which youcan select
 a specific image file that you wish to add as an object.
 Supports <code>.jpg</code>, <code>.ico</code> and <code>.png</code> file types
 
-<div role="alert" class="alert shadow-lg">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-    <div class="!m-0">The image should already be stored in your device.</div>
-</div>
+<Aside>
+    The image should already be saved in your device.
+</Aside>
 
 ![Choose button for the Image object type](@/assets/images/sorbet/sorbet_5_7.png)
 _Figure 27: “Choose” button in the "Image" object category_
@@ -93,10 +94,9 @@ You can choose from zero to all categories, depending on the type of game,
 by clicking on the corresponding checkbox that connects the column (category) to
 the row (object).
 
-<div role="alert" class="alert shadow-lg">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-    <div class="!m-0">The matching that is done at this stage of the game design is what will determine the correct classifications during gameplay.</div>
-</div>
+<Aside>
+    The matching that is done at this stage of the game design is what will determine the correct classifications during gameplay.
+</Aside>
 
 ![Example of assigning objects to categories](@/assets/images/sorbet/sorbet_5_9.png)
 _Figure 29: Example of assigning objects to categories_
