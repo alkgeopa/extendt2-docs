@@ -2,8 +2,6 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import tailwind from '@astrojs/tailwind';
 
-import partytown from '@astrojs/partytown';
-
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
@@ -116,6 +114,38 @@ export default defineConfig({
 								text: 'Being written...',
 								variant: 'note',
 							},
+						},
+					],
+				},
+
+				{
+					label: 'Dashboard',
+					items: [
+						{
+							label: 'Introduction to the Dashboard',
+							link: '/dashboard/introduction',
+						},
+						{
+							label: 'Educators',
+							link: '/dashboard/educators',
+						},
+						{
+							label: 'Predefined Dashboard',
+							link: '/dashboard/predefined-dashboard',
+						},
+						{
+							label: 'Configurable Dashboard',
+							link: '/dashboard/configurable-dashboard',
+						},
+						{
+							label: 'Access Raw LA Data',
+							link: '/dashboard/raw-data',
+						},
+
+						{
+							label: 'Seeting DT Phases',
+							link: '/dashboard/design-thinking',
+							badge: { text: 'Under development', variant: 'caution' },
 						},
 					],
 				},

@@ -3,6 +3,8 @@ title: Educator
 description: Guide for educators for the Exten(DT)² platform
 ---
 
+import { Aside } from '@astrojs/starlight/components';
+
 Educators are users that can design activities by using the available educational tools
 provided in the platform. They can create and manage learner groups by assigning learners
 from their institution to those groups. They can assign activities to these learner groups
@@ -10,16 +12,15 @@ and view the completed activities of individual learners.
 
 ## Login
 
-<strong>Educators cannot register by themselves.</strong> Instead, the institution administrator registers them.
+<strong>Educators cannot register by themselves.</strong> Instead, the
+institution administrator registers them.
 
-<div class="alert alert-warning">
-	<svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
-	<span class="leading-tight">
-		When your institution administrator registers you in the Platform you will receive a verification
-		email. <strong>Follow the instructions in the email to retrieve your credentials.</strong>
-		You will need them to log in to the Exten(DT)² Platform.
-	</span>
-</div>
+<Aside type="caution">
+	When your institution administrator registers you in the Platform you will
+	receive a verification email.
+	<b>Follow the instructions in the email to retrieve your credentials.</b>
+	You will need them to log in to the Exten(DT)² Platform.
+</Aside>
 
 ![Verification email received by the educator](@images/extendt2/ext_edu_email.png)
 _Verification email received by the educator_
@@ -61,13 +62,12 @@ The list of registered learners appear and you can select which to be members of
 ![Group members](@images/extendt2/ext_edu_members.png)
 _Group members_
 
-<div class="alert">
-	<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-	<span class="leading-tight">
-		Only an institution administrator can register new learners.<br>
-		<strong>Teachers can only assign already registered learners into groups.</strong>
-	</span>
-</div>
+<Aside>
+    Only an institution administrator can register new learners.
+
+    <b>Teachers can only assign already registered learners into groups.</b>
+
+</Aside>
 
 On the group member list you can find the learner/team IDs
 (eg. <kbd class="kbd kbd-xs text-[#e83e8c]">AntheaDorney996_Propodes2nd23</kbd>)
@@ -109,13 +109,11 @@ _List with groups to be selected_
 
 Now, all the members (learners) of these groups will be able to participate in the activity.
 
-<div class="alert">
-	<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-	<span class="leading-tight">
-		You can click on <kbd class="kbd bg-[#6c757d] text-white">Guide</kbd> at the
-		top left of the page anytime to view a tutorial video about the current page.
-	</span>
-</div>
+<Aside>
+	You can click on <kbd class="kbd bg-[#6c757d] text-white">Guide</kbd> at the
+	top left of the page anytime to view a tutorial video about the current
+	page.
+</Aside>
 
 ### Design the activity
 
@@ -130,18 +128,18 @@ _The activity editor_
 
 #### Activity Editor - Top bar button explanation
 
--   <kbd class="kbd bg-[#362f78] text-white">Save</kbd> saves the activity
--   <kbd class="kbd bg-[#6c757d] text-white">Reset</kbd> undo all changes and revert to the initial settings
--   <kbd class="kbd bg-warning text-black">Download Activity</kbd> download a file containing the activity to your computer
--   <kbd class="kbd bg-[#28a745] text-white">Upload Activity</kbd> upload a file containing an activity from your computer
--   <kbd class="kbd bg-[#362f78] text-white">Close</kbd> closes the activity editor
+| Button                                                         | Action                                                   |
+| -------------------------------------------------------------- | -------------------------------------------------------- |
+| <kbd class="kbd bg-[#362f78] text-white">Save</kbd>            | saves the activity                                       |
+| <kbd class="kbd bg-[#6c757d] text-white">Reset</kbd>           | undo all changes and revert to the initial settings      |
+| <kbd class="kbd bg-warning text-black">Download Activity</kbd> | download a file containing the activity to your computer |
+| <kbd class="kbd bg-[#28a745] text-white">Upload Activity</kbd> | upload a file containing an activity from your computer  |
+| <kbd class="kbd bg-[#362f78] text-white">Close</kbd>           | closes the activity editor                               |
 
-<div class="alert alert-warning">
-	<svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
-	<span class="leading-tight">
-		Be sure to <b>save your progress</b> before closing the editor!
-	</span>
-</div>
+<Aside type='caution'>
+    Be sure to <b>save your progress</b> before closing the editor!
+
+</Aside>
 
 ### Completed Activities
 
