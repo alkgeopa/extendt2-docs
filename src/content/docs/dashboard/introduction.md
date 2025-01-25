@@ -3,6 +3,7 @@ title: Introduction
 description: Introduction
 ---
 
+
 This dashboard provides an interactive web tool for visualizing data collected through learning analytics. It processes event-based user interactions with learning tools such as **Choico**, **Sorbet**, **Malt2**, and **Gears**, and presents the data in meaningful and actionable ways for different user groups.
 
 - **Educators** can use the dashboard to gain insights into students’ motivation, understanding, creativity, experimentation, and interaction with the learning tools. It also allows the monitoring of learning progress and the identification of areas where additional support may be needed.
@@ -13,6 +14,3 @@ Over time, by collecting and processing historical user interaction data, the da
 To access the dashboard you need to be login to Exten DT2 platform with a teacher account. Afterwards you will need to click "Analytcis" button as shown in the image. 
 
 ![Analytics button](./@images/dashboard/dashboard_1_1.png)
-
-
-
