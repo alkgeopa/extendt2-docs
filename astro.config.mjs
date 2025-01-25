@@ -121,11 +121,32 @@ export default defineConfig({
 				},
 
  {
-					label: ‘Dashboard’,
+					label: 'Dashboard',
 					items: [
 						{
-							label: 'Introduction to Dashboard,
-							link: ‘/dashboard/introduction',
+							label: 'Introduction to Dashboard',
+							link: '/dashboard/introduction',
+						},
+						{
+							label: 'Educators',
+							link: '/dashboard/educators',
+						},
+						{
+							label: 'Predefined Dashboard',
+							link: '/dashboard/predefined_dashboard',
+						},
+						{
+							label: 'Configurable Dashboard',
+							link: '/dashboard/configurable_dashboard',
+						},
+						{
+							label: 'Access Raw LA Data',
+							link: '/dashboard/raw_data',
+						},
+
+						{
+							label: 'Seeting DT Phases',
+							link: '/dashboard/desing_thinking',
 						},
 						
 					],
