@@ -1,0 +1,83 @@
+---
+title: Enabling Learning Analytics
+description: How to enable learning analytics in AuthELO in order to use the LA dashboard
+---
+
+import BrowserWindow from '@/components/BrowserWindow.astro';
+import { Image } from 'astro:assets';
+import authelo_la_1 from '@/assets/images/authelo/authelo_la_1.png';
+import authelo_la_2 from '@/assets/images/authelo/authelo_la_2.png';
+import authelo_la_3 from '@/assets/images/authelo/authelo_la_3.png';
+import authelo_la_4 from '@/assets/images/authelo/authelo_la_4.gif';
+import authelo_la_5 from '@/assets/images/authelo/authelo_la_5.gif';
+
+AuthELO can enhance an activity significantly. One of it's most useful function is perhaps
+the ability for the educator to enable the logging of the events that are to be used for
+analytics purposes in the Learning Analytics Dashboard.
+
+## How to enable Learning Analytics in AuthELO
+
+At the Educator Panel, go to <span class="kbd bg-[#362f78] text-white">Activities</span> and click on the activity to open it's details.
+Click on <span class="kbd bg-[#362f78] text-white fill-white"><svg class="!mr-1" width="10" height="10" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m12.52.55-5 5-6.97 6.96 3 3 12-12Zm-4 6 4-4 1 1-4 4.05ZM2.77 3.18a3.85 3.85 0 0 1 2.55 2.55 3.85 3.85 0 0 1 2.55-2.55A3.82 3.82 0 0 1 5.32.64a3.82 3.82 0 0 1-2.55 2.54m5.73-.63a2 2 0 0 1 1.28-1.28A1.92 1.92 0 0 1 8.5 0a1.88 1.88 0 0 1-1.27 1.27A1.92 1.92 0 0 1 8.5 2.55m-6.36 0a1.92 1.92 0 0 1 1.27-1.28A1.88 1.88 0 0 1 2.14 0 1.92 1.92 0 0 1 .86 1.27a2 2 0 0 1 1.28 1.28m12.59 3.67a1.94 1.94 0 0 1-1.28 1.27 1.94 1.94 0 0 1 1.28 1.27A1.9 1.9 0 0 1 16 7.49a1.9 1.9 0 0 1-1.27-1.27"></path></svg>Enhance Activity</span> to open AuthELO.
+
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={authelo_la_1}
+		alt="Learing activities page highlighting the Enhance Activity button"
+		width={authelo_la_1.width}
+		height="auto"
+	/>
+	<span slot="caption">
+		Learing activities page highlighting the Enhance Activity button
+	</span>
+</BrowserWindow>
+
+Select <span class="kbd bg-[#362f78] text-white">Enable learning analytics</span> on the right.
+
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={authelo_la_2}
+		alt="Initial page of AuthELO"
+		width={authelo_la_2.width}
+		height="auto"
+	/>
+	<span slot="caption">Initial page of AuthELO</span>
+</BrowserWindow>
+
+You should now see the **AuthELO** widget page.
+Click on the <span class="kbd">Event Selection</span> tab.
+
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={authelo_la_3}
+		alt="Initial page of AuthELO"
+		width={authelo_la_3.width}
+		height="auto"
+	/>
+</BrowserWindow>
+
+In the <span class="kbd">Event Selection</span> tab, you can select the events that you want to log.
+First, select the event type from the option on the left.
+Then, select the event type from the list of event types.
+
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={authelo_la_4}
+		alt="Event Selection Tab"
+		width={authelo_la_4.width}
+		height="auto"
+	/>
+	<span slot="caption">Event Selection Tab</span>
+</BrowserWindow>
+
+Once you have selected the events, click on the <span class="kbd bg-[#362f78] text-white">Save</span> button to save the changes.
+
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={authelo_la_5}
+		alt="Save button"
+		width={authelo_la_5.width}
+		height="auto"
+	/>
+	<span slot="caption">It is important to save the activity after selecting the events.</span>
+</BrowserWindow>
