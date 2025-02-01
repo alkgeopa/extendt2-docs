@@ -216,7 +216,6 @@ export default defineConfig({
               '@images': '/src/assets/images',
           },
       },
-
       plugins: [tailwindcss()],
     },
 });

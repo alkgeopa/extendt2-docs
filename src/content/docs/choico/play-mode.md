@@ -5,7 +5,7 @@ description: Play Games Online – Play Mode
 
 ## Choose a ready-made ChoiCo game
 
-By selecting one of the existing online games in the <kbd class="kbd">Play Online Games</kbd> menu,
+By selecting one of the existing online games in the <span class="kbd">Play Online Games</span> menu,
 ChoiCo enters "Game Mode" and thus enables the user to start the game.
 
 ![Opening a game in "Play Mode"](@images/choico/choico_3_1.png)
@@ -15,7 +15,7 @@ Through a pop-up window, **Game Instructions** first appear,
 with information and details about the game such as its story, the
 purpose, the objectives or any additional information you need to know about the
 game flow and development. To start the game, select
-<kbd class="kbd bg-green-500 text-white">Let’s Play!</kbd>.
+<span class="kbd bg-green-700 text-white">Let’s Play!</span>.
 
 ![Game Instructions pop-up window](@images/choico/choico_3_2.png)
 _Figure 6: Game Instructions pop-up window_
@@ -65,7 +65,7 @@ image. The values that each field can take at the corresponding point is a subje
 of discussion that will be further analyzed in the section on designing and modifying
 a ChoiCo game.
 
-You can select each point by clicking the <kbd class="kbd bg-amber-500 text-black">Select point</kbd> button.
+You can select each point by clicking the <span class="kbd bg-amber-500 text-black">Select point</span> button.
 
 ![Point Information Table - "Covid Survival" Game](@images/choico/choico_3_6.png)
 _Figure 10: Point Information Table - "Covid Survival" Game_
@@ -103,13 +103,13 @@ game from your files, the game ends when one (or more) field value crosses the
 "red lines" as they have been defined during the design of the game. When the
 game is finished, the following pop-up notification box appears where you can:
 
-1. play again by selecting the <kbd class="kbd bg-amber-500 text-black">Play Again</kbd>.
+1. play again by selecting the <span class="kbd bg-amber-500 text-black">Play Again</span>.
 
 2. display in detail the results and statistics of the game you just played by
-   selecting <kbd class="kbd bg-amber-500 text-black">Show score and statistics</kbd>. From there, you can
+   selecting <span class="kbd bg-amber-500 text-black">Show score and statistics</span>. From there, you can
    also download your score in a pdf file.
 
-3. edit the game by selecting <kbd class="kbd bg-amber-500 text-black">Edit Game</kbd>. More
+3. edit the game by selecting <span class="kbd bg-amber-500 text-black">Edit Game</span>. More
    information in Section 4.
 
 ![End game notification](@images/choico/choico_3_14.png)
