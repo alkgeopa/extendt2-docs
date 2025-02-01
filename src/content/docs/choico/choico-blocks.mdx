@@ -1,0 +1,147 @@
+---
+title: Choico Blocks
+description: Choico Blocks
+---
+
+import { Image } from 'astro:assets';
+import { Badge, Aside } from '@astrojs/starlight/components';
+import ChoicoBlock from '@/components/ChoicoBlock.astro';
+
+import gameStart from '@/assets/images/choico/blocks/gamestart-block.jpeg';
+import setField from '@/assets/images/choico/blocks/setFieldTo.jpeg';
+import ifBlock from '@/assets/images/choico/blocks/if.jpeg';
+import ifExample from '@/assets/images/choico/blocks/ifExample.jpeg';
+import ifElse from '@/assets/images/choico/blocks/ifelse.jpeg';
+
+<Aside type="note">
+	<p>Being written...</p>
+	<p>
+		Check the ChoiCO block library{' '}
+		<a href="http://etl.ppp.uoa.gr/choico/blocksEn.html">here</a>.
+	</p>
+</Aside>
+
+## Initialize
+
+<ChoicoBlock>
+	<Image
+		slot="image"
+		src={gameStart}
+		width={gameStart.width}
+		height="auto"
+		alt=""
+	/>
+	<div slot="description">
+		All the initial settings of the game must be placed under this block
+	</div>
+	<div slot="modifications">
+		All the initial settings of the game must be placed under this block
+	</div>
+	<div slot="tabs">
+		<Badge text="Initial Settings" />
+	</div>
+</ChoicoBlock>
+
+<ChoicoBlock>
+	<Image
+		slot="image"
+		src={setField}
+		width={setField.width}
+		height="auto"
+		alt=""
+	/>
+	<div slot="description">
+		Sets the initial value of a game attribute (i.e. FieldA) to a number
+		(i.e. 0)
+	</div>
+	<div slot="modifications">
+		Click on the name of the field to appear a dropdown menu with the
+		available fields to select from. Click on the number box to change the
+		number.
+	</div>
+	<div slot="tabs">
+		<Badge text="Initial Settings" />
+	</div>
+</ChoicoBlock>
+
+## Conditions
+
+<ChoicoBlock id="if-block">
+	<Image
+		slot="image"
+		src={ifBlock}
+		width={ifBlock.width}
+		height="auto"
+		alt=""
+	/>
+	<div slot="description">
+		A conditional statement block. It needs a condition block to be
+		connected at the top and some blocks to be included inside. If the
+		statement of the condition is true, then the blocks it includes will be
+		executed.
+	</div>
+	<div slot="modifications">None.</div>
+	<div slot="tabs">
+		<Badge text="Game play rules" />
+		<Badge text="End rules" />
+	</div>
+	<div slot="example" class="col-span-2 border-t">
+		<div class="!m-0 font-bold">Example of use: </div>
+		<Image
+			src={ifExample}
+			width={ifExample.width}
+			height="auto"
+			alt=""
+			class="!m-0"
+		/>
+		<div class="!m-0">
+			If the attribute FieldA is greater than 3 then a pop up with the
+			message "Attention!"appears
+		</div>
+	</div>
+</ChoicoBlock>
+
+<ChoicoBlock id="if-block" alert="To use this block you have to click on the settings icon of an if block and create the if else block like below!">
+	<Image
+		slot="image"
+		src={ifElse}
+		width={ifElse.width}
+		height="auto"
+		alt=""
+	/>
+	<div slot="description">
+		A conditional statement block. It needs a condition block to be
+		connected at the top and some blocks to be included inside. If the
+		statement of the condition is true, then the blocks it includes will be
+		executed.
+	</div>
+	<div slot="modifications">None.</div>
+	<div slot="tabs">
+		<Badge text="Game play rules" />
+		<Badge text="End rules" />
+	</div>
+	<div slot="example" class="col-span-2 border-t">
+		<div class="!m-0 font-bold">Example of use: </div>
+		<Image
+			src={ifExample}
+			width={ifExample.width}
+			height="auto"
+			alt=""
+			class="!m-0"
+		/>
+		<div class="!m-0">
+			If the attribute FieldA is greater than 3 then a pop up with the
+			message "Attention!"appears
+		</div>
+	</div>
+</ChoicoBlock>
+
+## Variables
+
+## Maths
+
+## Game Actions
+
+## Map Actions
+
+## Game Flow

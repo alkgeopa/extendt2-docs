@@ -4,6 +4,9 @@ description: Guide for educators for the Exten(DT)² platform
 ---
 
 import { Aside } from '@astrojs/starlight/components';
+import BrowserWindow from '@/components/BrowserWindow.astro';
+import { Image } from 'astro:assets';
+import ext_edu_login from '@/assets/images/extendt2/ext_edu_login.png';
 
 Educators are users that can design activities by using the available educational tools
 provided in the platform. They can create and manage learner groups by assigning learners
@@ -26,8 +29,15 @@ institution administrator registers them.
 _Verification email received by the educator_
 
 On the educator's login screen fill in your credentials to access the platform.
-![Educator login screen](@images/extendt2/ext_edu_login.png)
-_Educator login screen_
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={ext_edu_login}
+		alt="Educator login screen"
+		width={ext_edu_login.width}
+		height="auto"
+	/>
+	<span slot="caption">Educator login screen</span>
+</BrowserWindow>
 
 If your credentials were correct you should see the **Educator Panel** page.
 Here, you can create groups of learners, design educational material and

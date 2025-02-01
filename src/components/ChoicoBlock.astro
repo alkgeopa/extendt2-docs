@@ -1,0 +1,33 @@
+---
+const { alert } = Astro.props;
+---
+
+<div
+	class="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-x-4 border rounded-2xl p-4 !mb-8"
+>
+	{
+		alert && (
+			<div class="lg:col-span-2 bg-red-100 border border-red-500 text-red-700 rounded-lg p-4 !m-0">
+				{alert}
+			</div>
+		)
+	}
+	<div class="flex items-center lg:justify-center px-4 *:max-w-full">
+		<slot name="image" />
+	</div>
+	<div class="flex flex-col">
+		<div>
+			<span class="font-bold">Description: </span>
+			<slot name="description" />
+		</div>
+		<div>
+			<span class="font-bold">Modifications: </span>
+			<slot name="modifications" />
+		</div>
+		<div>
+			<span class="font-bold">Available in tabs: </span>
+			<slot name="tabs" />
+		</div>
+	</div>
+	<slot name="example" />
+</div>
