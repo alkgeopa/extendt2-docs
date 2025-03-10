@@ -6,6 +6,7 @@ const config = {
 	semi: true,
 	singleQuote: true,
 	plugins: ['prettier-plugin-astro'],
+	tailwindStylesheet: './src/global.css',
 };
 
 export default config;

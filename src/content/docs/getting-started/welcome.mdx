@@ -3,6 +3,12 @@ title: Welcome
 description: Guide on how to use the Exten(DT)² platform's documentation
 ---
 
+import BrowserWindow from '@/components/BrowserWindow.astro';
+import { Image } from 'astro:assets';
+import start_1 from '@images/getting-started/start_1.png';
+import start_2 from '@images/getting-started/start_2.png';
+import start_3 from '@images/getting-started/start_3.png';
+
 The Exten(DT)² platform is an ecosystem of diverse web-based learning environments and
 supportive technologies. The platform allows the design, development and deployment
 of highly interactive, constructionist design thinking activities for learners of all ages.
@@ -14,22 +20,43 @@ carefully.
 
 The documentation pages (docs) are grouped based on the associated technology or tool.
 You can access all these groups from the left sidebar.
-![Sidebar with grouped content](@images/getting-started/start_1.png)
-_Sidebar with grouped content_
+
+<BrowserWindow url="extendt2.com/docs/getting-started/welcome/">
+	<Image
+		src={start_1}
+		alt="Sidebar with grouped content"
+		width={start_1.width}
+		height="auto"
+	/>
+	<span slot="caption">Sidebar with grouped content</span>
+</BrowserWindow>
 
 Some of the content may not be ready yet. Incomplete pages are marked with an appropriate badge.
 ![Incomplete pages showing that they are currently being written](@images/getting-started/start_5.png)
 _Incomplete pages showing that they are currently being written_
 
 The main content of the page sits in the middle
-![Main content](@images/getting-started/start_2.png)
-_Main content_
+<BrowserWindow url="extendt2.com/docs/getting-started/welcome/">
+	<Image
+		src={start_2}
+		alt="Main content"
+		width={start_2.width}
+		height="auto"
+	/>
+	<span slot="caption">Main content</span>
+</BrowserWindow>
 
 On the right there is a table of content for the current page. Use this to quickly
 navigate to your desired section.
-![Table of contents of the page](@images/getting-started/start_3.png)
-_Table of contents of the page_
-
+<BrowserWindow url="extendt2.com/docs/sorbet/play-the-game/">
+	<Image
+		src={start_3}
+		alt="Table of contents of the page"
+		width={start_3.width}
+		height="auto"
+	/>
+	<span slot="caption">Table of contents of the page</span>
+</BrowserWindow>
 
 If you need to search for specific content, keywords etc. use the search box at the top.
 ![Search box](@images/getting-started/start_4.png)

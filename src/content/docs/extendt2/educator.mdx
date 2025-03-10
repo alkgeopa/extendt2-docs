@@ -7,6 +7,17 @@ import { Aside } from '@astrojs/starlight/components';
 import BrowserWindow from '@/components/BrowserWindow.astro';
 import { Image } from 'astro:assets';
 import ext_edu_login from '@/assets/images/extendt2/ext_edu_login.png';
+import ext_edu_panel from '@/assets/images/extendt2/ext_edu_panel.png';
+import ext_edu_groups from '@/assets/images/extendt2/ext_edu_groups.png';
+import ext_edu_grouplist from '@/assets/images/extendt2/ext_edu_grouplist.png';
+import ext_edu_groupdetails from '@/assets/images/extendt2/ext_edu_groupdetails.png';
+import ext_edu_members from '@/assets/images/extendt2/ext_edu_members.png';
+import ext_edu_activities from '@/assets/images/extendt2/ext_edu_activities.png';
+import ext_edu_activitylist from '@/assets/images/extendt2/ext_edu_activitylist.png';
+import ext_edu_activitydetails from '@/assets/images/extendt2/ext_edu_activitydetails.png';
+import ext_edu_groupselect from '@/assets/images/extendt2/ext_edu_groupselect.png';
+import ext_edu_activityeditor from '@/assets/images/extendt2/ext_edu_activityeditor.png';
+import ext_edu_completed from '@/assets/images/extendt2/ext_edu_completed.png';
 
 Educators are users that can design activities by using the available educational tools
 provided in the platform. They can create and manage learner groups by assigning learners
@@ -29,6 +40,7 @@ institution administrator registers them.
 _Verification email received by the educator_
 
 On the educator's login screen fill in your credentials to access the platform.
+
 <BrowserWindow url="extendt2.com">
 	<Image
 		src={ext_edu_login}
@@ -42,35 +54,74 @@ On the educator's login screen fill in your credentials to access the platform.
 If your credentials were correct you should see the **Educator Panel** page.
 Here, you can create groups of learners, design educational material and
 get insights on the learner progress.
-![Educator Panel](@images/extendt2/ext_edu_panel.png)
-_Educator Panel_
+
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={ext_edu_panel}
+		alt="Educator Panel"
+		width={ext_edu_panel.width}
+		height="auto"
+	/>
+	<span slot="caption">Educator Panel</span>
+</BrowserWindow>
 
 ## Learner Groups
 
-![Learner Groups Page](@images/extendt2/ext_edu_groups.png)
-_Learner Groups Page_
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={ext_edu_groups}
+		alt="Learner Groups Page"
+		width={ext_edu_groups.width}
+		height="auto"
+	/>
+	<span slot="caption">Learner Groups Page</span>
+</BrowserWindow>
 
-Click <kbd class="kbd bg-[#362f78] text-white">Create group</kbd> to make a new group.
+Click <span class="kbd bg-[#362f78] text-white">Create group</span> to make a new group.
 
 Give it a name and, optionally, a description:
 ![New Group Page](@images/extendt2/ext_edu_newgroup.png)
 _New Group Page_
 
 After you create your new group it appears on the group list:
-![Group list](@images/extendt2/ext_edu_grouplist.png)
-_Group list_
+
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={ext_edu_grouplist}
+		alt="Group list"
+		width={ext_edu_grouplist.width}
+		height="auto"
+	/>
+	<span slot="caption">Group list</span>
+</BrowserWindow>
 
 Click on the group row to open it's details:
-![Group details](@images/extendt2/ext_edu_groupdetails.png)
-_Group details_
+
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={ext_edu_groupdetails}
+		alt="Group details"
+		width={ext_edu_groupdetails.width}
+		height="auto"
+	/>
+	<span slot="caption">Group details</span>
+</BrowserWindow>
 
 On the left of the details panel are info about the group (title, description etc.).
 On the right of the details panel are the list of group members. To add/edit group members
-click on <kbd class="kbd bg-[#ffd75e] text-black">Add/Edit Group Members</kbd>.
+click on <span class="kbd bg-[#ffd75e] text-black">Add/Edit Group Members</span>.
 
 The list of registered learners appear and you can select which to be members of that group:
-![Group members](@images/extendt2/ext_edu_members.png)
-_Group members_
+
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={ext_edu_members}
+		alt="Group members"
+		width={ext_edu_members.width}
+		height="auto"
+	/>
+	<span slot="caption">Group members</span>
+</BrowserWindow>
 
 <Aside>
     Only an institution administrator can register new learners.
@@ -80,16 +131,23 @@ _Group members_
 </Aside>
 
 On the group member list you can find the learner/team IDs
-(eg. <kbd class="kbd kbd-xs text-[#e83e8c]">AntheaDorney996_Propodes2nd23</kbd>)
+(eg. <span class="kbd kbd-xs text-[#e83e8c]">AntheaDorney429_School3rd84</span>).
 Share each one of these with each learner, respectively.
 
 ## Learning Activities
 
-![Learning activities page](@images/extendt2/ext_edu_activities.png)
-_Learning activities page_
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={ext_edu_activities}
+		alt="Learning activities page"
+		width={ext_edu_activities.width}
+		height="auto"
+	/>
+	<span slot="caption">Learning activities page</span>
+</BrowserWindow>
 
 At first, your activity list will be empty.
-Click <kbd class="kbd bg-[#362f78] text-white">Create activity</kbd> to make a new activity.
+Click <span class="kbd bg-[#362f78] text-white">Create activity</span> to make a new activity.
 
 ### Create a new activity
 
@@ -100,63 +158,102 @@ You can always edit these information later.
 ![New activity page](@images/extendt2/ext_edu_newactivity.png)
 _New activity page_
 
-Click <kbd class="kbd bg-[#362f78] text-white">Save</kbd> to save your new activity.
+Click <span class="kbd bg-[#362f78] text-white">Save</span> to save your new activity.
 
 The newly created activity appears on the list:
-![Learning activities list](@images/extendt2/ext_edu_activitylist.png)
-_Learning activities list_
+
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={ext_edu_activitylist}
+		alt="Learning activities list"
+		width={ext_edu_activitylist.width}
+		height="auto"
+	/>
+	<span slot="caption">Learning activities list</span>
+</BrowserWindow>
 
 Click on the activity row to open its details:
-![Activity details](@images/extendt2/ext_edu_activitydetails.png)
+
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={ext_edu_activitydetails}
+		alt="Activity details"
+		width={ext_edu_activitydetails.width}
+		height="auto"
+	/>
+	<span slot="caption">Activity details</span>
+</BrowserWindow>
 
 ### Assign the activity to some group(s)
 
-Click <kbd class="kbd bg-[#ffd75e] text-black" >Add Groups</kbd> to assign the activity to one or more groups.
+Click <span class="kbd bg-[#ffd75e] text-black" >Add Groups</span> to assign the activity to one or more groups.
 
 A list with all the previously created groups appears. Select any group needed:
-![List with groups to be selected](@images/extendt2/ext_edu_groupselect.png)
-_List with groups to be selected_
 
-Now, all the members (learners) of these groups will be able to participate in the activity.
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={ext_edu_groupselect}
+		alt="List with groups to be selected"
+		width={ext_edu_groupselect.width}
+		height="auto"
+	/>
+	<span slot="caption">List with groups to be selected</span>
+</BrowserWindow>
+Now, all the members (learners) of these groups will be able to participate in
+the activity.
 
 <Aside>
-	You can click on <kbd class="kbd bg-[#6c757d] text-white">Guide</kbd> at the
-	top left of the page anytime to view a tutorial video about the current
+	You can click on <span class="kbd bg-[#6c757d] text-white">Guide</span> at
+	the top left of the page anytime to view a tutorial video about the current
 	page.
 </Aside>
 
 ### Design the activity
 
-Click on <kbd class="kbd bg-[#362f78] text-white">Design Activity</kbd>
+Click on <span class="kbd bg-[#362f78] text-white">Design Activity</span>
 to open the activity editor and prepare the activity for your learners.
 
 The activity editor opens:
-![Activity editor](@images/extendt2/ext_edu_activityeditor.png)
-_The activity editor_
+
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={ext_edu_activityeditor}
+		alt="Activity editor"
+		width={ext_edu_activityeditor.width}
+		height="auto"
+	/>
+	<span slot="caption">The activity editor</span>
+</BrowserWindow>
 
 **Refer to the guides of each tool on how to use them.**
 
 #### Activity Editor - Top bar button explanation
 
-| Button                                                         | Action                                                   |
-| -------------------------------------------------------------- | -------------------------------------------------------- |
-| <kbd class="kbd bg-[#362f78] text-white">Save</kbd>            | saves the activity                                       |
-| <kbd class="kbd bg-[#6c757d] text-white">Reset</kbd>           | undo all changes and revert to the initial settings      |
-| <kbd class="kbd bg-warning text-black">Download Activity</kbd> | download a file containing the activity to your computer |
-| <kbd class="kbd bg-[#28a745] text-white">Upload Activity</kbd> | upload a file containing an activity from your computer  |
-| <kbd class="kbd bg-[#362f78] text-white">Close</kbd>           | closes the activity editor                               |
+| Button                                                           | Action                                                   |
+| ---------------------------------------------------------------- | -------------------------------------------------------- |
+| <span class="kbd bg-[#362f78] text-white">Save</span>            | saves the activity                                       |
+| <span class="kbd bg-[#6c757d] text-white">Reset</span>           | undo all changes and revert to the initial settings      |
+| <span class="kbd bg-warning text-black">Download Activity</span> | download a file containing the activity to your computer |
+| <span class="kbd bg-[#28a745] text-white">Upload Activity</span> | upload a file containing an activity from your computer  |
+| <span class="kbd bg-[#362f78] text-white">Close</span>           | closes the activity editor                               |
 
-<Aside type='caution'>
-    Be sure to <b>save your progress</b> before closing the editor!
-
+<Aside type="caution">
+	Be sure to <b>save your progress</b> before closing the editor!
 </Aside>
 
 ### Completed Activities
 
 Click on <kbd class="kbd bg-[#362f78] text-yellow-200">Completed Activities</kbd> to view a list of all the completed activities from your learners.
 
-![Completed activities button](@images/extendt2/ext_edu_completed.png)
-_Completed activities button_
+<BrowserWindow url="extendt2.com">
+    <Image
+        src={ext_edu_completed}
+        alt="Completed activities button"
+        width={ext_edu_completed.width}
+        height="auto"
+    />
+    <span slot="caption">Completed activities button</span>
+</BrowserWindow>
 
 Click on a learner to open the completed version of their activity.
 

@@ -4,6 +4,20 @@ description: Guide for institution administrators for the Exten(DT)² platform
 ---
 
 import { Aside } from '@astrojs/starlight/components';
+import BrowserWindow from '@/components/BrowserWindow.astro';
+import { Image } from 'astro:assets';
+import ext_login_1 from '@images/extendt2/ext_login_1.png';
+import ext_login_2 from '@images/extendt2/ext_login_2.png';
+import ext_login_3 from '@images/extendt2/ext_login_3.png';
+import ext_login_4 from '@images/extendt2/ext_login_4.png';
+import ext_login_6 from '@images/extendt2/ext_login_6.png';
+import ext_admin_page from '@images/extendt2/ext_admin_page.png';
+import ext_admin_edu_empty from '@images/extendt2/ext_admin_edu_empty.png';
+import ext_admin_edu_create from '@images/extendt2/ext_admin_edu_create.png';
+import ext_admin_edu_first from '@images/extendt2/ext_admin_edu_first.png';
+import ext_admin_lea_empty from '@images/extendt2/ext_admin_lea_empty.png';
+import ext_admin_lea_create from '@images/extendt2/ext_admin_lea_create.png';
+import ext_admin_lea_first from '@images/extendt2/ext_admin_lea_first.png';
 
 Administrators are users responsible for managing the participating members of
 their educational institution. These members are educators and learners. An administrator
@@ -13,21 +27,42 @@ can add, delete or edit their institution members.
 
 The first time you visit the Exten(DT)² platform you will be greeted by the login page
 
-![Login screen of the Exten(DT)² platform](@images/extendt2/ext_login_1.png)
-_Login screen of the Exten(DT)² platform_
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={ext_login_1}
+		alt="Login screen of the Exten(DT)² platform"
+		width={ext_login_1.width}
+		height="auto"
+	/>
+	<span slot="caption">Login screen of the Exten(DT)² platform</span>
+</BrowserWindow>
 
-By clicking <span class="font-bold text-lg text-[#362f78] uppercase">Login</span> the three user role specific buttons appear
+By clicking <span class="px-1 font-bold text-lg text-[#362f78] uppercase rounded border border-neutral-200 drop-shadow-xl dark:bg-neutral-200">Login</span> the three user role specific buttons appear
 
-![The options for the three user roles](@images/extendt2/ext_login_2.png)
-_The options for the three user roles_
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={ext_login_2}
+		alt="The options for the three user roles"
+		width={ext_login_2.width}
+		height="auto"
+	/>
+	<span slot="caption">The options for the three user roles</span>
+</BrowserWindow>
 
-By selecting <kbd class="kbd bg-[#543b8a] text-white"><img src="/docs/img/admin.png" class="!h-4 mr-2"/>ADMINISTRATOR</kbd>
+By selecting <span class="kbd bg-[#543b8a] text-white gap-x-1"><img src="/docs/img/admin.png" class="!h-4" alt="" aria-hidden="true"/>ADMINISTRATOR</span>
 you will be presented with the administrator options.
 
-Click on <kbd class="kbd bg-[#362f78] text-white">Register</kbd> to register your institution administrator.
+Click on <span class="kbd bg-[#362f78] text-white">Register</span> to register your institution administrator.
 
-![Administrator option in the login screen](@images/extendt2/ext_login_3.png)
-_Administrator option in the login screen_
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={ext_login_3}
+		alt="Administrator option in the login screen"
+		width={ext_login_3.width}
+		height="auto"
+	/>
+	<span slot="caption">Administrator option in the login screen</span>
+</BrowserWindow>
 
 A dialog box appears with a form you must fill.
 
@@ -39,10 +74,17 @@ Enter the name of your institution and a valid e-mail address.
 	how to access your newly created account.
 </Aside>
 
-![The administrator register form](@images/extendt2/ext_login_4.png)
-_The administrator register form_
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={ext_login_4}
+		alt="The administrator register form"
+		width={ext_login_4.width}
+		height="auto"
+	/>
+	<span slot="caption">The administrator register form</span>
+</BrowserWindow>
 
-Click <kbd class="kbd bg-[#4a4284] text-white">OK</kbd>.
+Click <span class="kbd bg-[#4a4284] text-white">OK</span>.
 
 A message will appear suggesting you verify your email address.
 
@@ -64,34 +106,66 @@ necessary info you can proceed to logging in as administrator.
 
 ## Logging in
 
-As before, at the login page, select <span class="font-bold text-lg text-[#362f78] uppercase">Login</span>,
-then <kbd class="kbd bg-[#543b8a] text-white"><img src="/docs/img/admin.png" class="!h-4 mr-2"/>ADMINISTRATOR</kbd>
-and then <kbd class="kbd bg-[#362f78] text-white">Login</kbd>.
+As before, at the login page, select <span class="px-1 font-bold text-lg text-[#362f78] uppercase rounded border border-neutral-200 drop-shadow-xl dark:bg-neutral-200">Login</span>,
+then <span class="kbd bg-[#543b8a] text-white"><img src="/docs/img/admin.png" class="!h-4 mr-2" alt="" aria-hidden="true"/>ADMINISTRATOR</span>
+and then <span class="kbd bg-[#362f78] text-white">Login</span>.
 
 A dialog box with the login form appears.
 
-![Administrator login form](@images/extendt2/ext_login_6.png)
-_Administrator login form_
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={ext_login_6}
+		alt="Administrator login form"
+		width={ext_login_6.width}
+		height="auto"
+	/>
+	<span slot="caption">Administrator login form</span>
+</BrowserWindow>
 
-Enter the e-mail address you used to register and your password and click <kbd class="kbd bg-[#4a4284] text-white">OK</kbd>.
+Enter the e-mail address you used to register and your password and click <span class="kbd bg-[#4a4284] text-white">OK</span>.
 
 If your credentials were correct you should see the **Administrator Panel** page.
 Here, you can select to manage either your educators or your learners.
 
-![Administration Panel page](@images/extendt2/ext_admin_page.png)
-_Administration Panel page_
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={ext_admin_page}
+		alt="Administration Panel page"
+		width={ext_admin_page.width}
+		height="auto"
+	/>
+	<span slot="caption">Administration Panel page</span>
+</BrowserWindow>
 
 ## Managing Educators
 
 In the **Educators** page you can view all your registered educators.
 At first the page will be empty as you have not registered any educators yet.
-![Educators empty page](@images/extendt2/ext_admin_edu_empty.png)
-_Educators empty page_
 
-Click <kbd class="kbd bg-[#362f78] text-white">Add new educator</kbd> to add a new one.
+Click <span class="kbd bg-[#362f78] text-white">Add new educator</span> to add a new one.
+
+<BrowserWindow url="extendt2.com">
+	<Image
+		src={ext_admin_edu_empty}
+		alt="Educators empty page"
+		width={ext_admin_edu_empty.width}
+		height="auto"
+	/>
+	<span slot="caption">Educators empty page</span>
+</BrowserWindow>
 
 Fill all the fields with the appropriate information. Enter the educators e-mail in the
 **Educator ID** field.
+
+<BrowserWindow url="extendt2.com" noBottomMargin>
+    <Image
+        src={ext_admin_edu_create}
+        alt="Add educator form page"
+        width={ext_admin_edu_create.width}
+        height="auto"
+    />
+    <span slot="caption">Add educator form page</span>
+</BrowserWindow>
 
 <Aside type="caution">
 	In the <code>Educator ID</code> field you need to enter a valid e-mail
@@ -101,15 +175,21 @@ Fill all the fields with the appropriate information. Enter the educators e-mail
 	</strong>
 </Aside>
 
-![Add educator form page](@images/extendt2/ext_admin_edu_create.png)
-_Add educator page_
-
-Click <kbd class="kbd bg-[#362f78] text-white">Save</kbd> to add the new educator.
+Click <span class="kbd bg-[#362f78] text-white">Save</span> to add the new educator.
 
 Now, your newly added educator should appear in the the **Registered Educators** page.
 For each educator that is created an appropriate educator account is created.
-See more at the [Educator](/docs/extendt2/educator) page.
-![First educator entry](@images/extendt2/ext_admin_edu_first.png)
+See more at the [Educator page](/docs/extendt2/educator).
+
+<BrowserWindow url="extendt2.com">
+    <Image
+        src={ext_admin_edu_first}
+        alt="First educator entry"
+        width={ext_admin_edu_first.width}
+        height="auto"
+    />
+    <span slot="caption">First educator entry</span>
+</BrowserWindow>
 
 Notice that initially every educator is unverified.
 **In order for the registration to be completed educators need to verify their account by following the instruction on the email they receive .**
@@ -127,22 +207,46 @@ If not, they cannot access their educator account.
 
 In the **Learners** page you can view all your registered learners.
 At first the page will be empty as you have not registered any learners yet.
-![Registered Learners initially empty page](@images/extendt2/ext_admin_lea_empty.png)
-_Registered Learners initially empty page_
 
-Click <kbd class="kbd bg-[#362f78] text-white">Add new learner</kbd> to add a new one.
+Click <span class="kbd bg-[#362f78] text-white">Add new learner</span> to add a new one.
 
-Fill in the learner's name.
-![Learner creation page](@images/extendt2/ext_admin_lea_create.png)
-_Learner creation page_
+<BrowserWindow url="extendt2.com">
+    <Image
+        src={ext_admin_lea_empty}
+        alt="Registered Learners initially empty page"
+        width={ext_admin_lea_empty.width}
+        height="auto"
+    />
+    <span slot="caption">Registered Learners initially empty page</span>
+</BrowserWindow>
 
-Click <kbd class="kbd bg-[#362f78] text-white">Save</kbd> to add the new leaner.
+Fill in the learner's name and click <span class="kbd bg-[#362f78] text-white">Save</span>
+to add the new leaner.
+
+<BrowserWindow url="extendt2.com">
+    <Image
+        src={ext_admin_lea_create}
+        alt="Learner creation page"
+        width={ext_admin_lea_create.width}
+        height="auto"
+    />
+    <span slot="caption">Learner creation page</span>
+</BrowserWindow>
 
 Now, your newly added learner should appear in the the **Registered Learners** page.
 For each learner that is created an appropriate learner account is created.
+
+<BrowserWindow url="extendt2.com">
+    <Image
+        src={ext_admin_lea_first}
+        alt="First learner entry"
+        width={ext_admin_lea_first.width}
+        height="auto"
+    />
+    <span slot="caption">First learner entry</span>
+</BrowserWindow>
+
 See more at the [Learner](/docs/extendt2/learner) page.
-![First learner entry](@images/extendt2/ext_admin_lea_first.png)
-_First learner entry_
 
 <Aside>
 	Learner/Team ID is the ticket to the Exten(DT)² Platform. Make sure you or
