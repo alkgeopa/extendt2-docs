@@ -39,7 +39,7 @@ _Figure 32: Activate Camera_
 
 When you try to open a game (see [Selecting an existing, online game](/docs/sorbet/play-the-game#selecting-an-online-existing-game))
 e.g. one of the Online Examples, a browser pop-up window will appear confirming
-the request to use the camera and microphone. Click on <kbd class="kbd">Allow</kbd> to give access.
+the request to use the <b>camera</b> and <b>microphone</b>. Click on <kbd class="kbd">Allow</kbd> to give access.
 
 ![Website’s request for camera access](@images/sorbet/sorbet_6_2.png)
 _Figure 33: Website’s request for camera access_
@@ -111,10 +111,34 @@ _Figure 34: 2 digital palms manipulating the falling objects_
 	</div>
 </Aside>
 
+<div class="flex flex-col flex-nowrap items-center gap-x-4 sm:flex-row">
+	<div>
+		You can also spell out the following voice commands while playing:
+		<ul>
+			<li>
+				<b>"Faster"</b>: It adds 20 to the current value of the falling objects' speed
+			</li>
+			<li>
+				<b>"Slower"</b>: It subtracts 20 from the current value of the falling objects' speed
+			</li>
+			<li>
+				<b>"More"</b>: It adds 20 to the current value of the falling objects' density
+			</li>
+			<li>
+				<b>"Less"</b>: It subtracts 20 from the current value of the falling objects' density
+			</li>
+		</ul>
+	</div>
+</div>
+<Aside>
+	<div class="!m-0">
+		Be sure that you have given access to your device's microphone to use this feature in a relatively calm environment with non-overlapping voices.
+	</div>
+</Aside>
+
 ## Edit an EXT game
 
-In the EXT version of SorBET, you have the ability to modify the speed and density
-of the falling objects using commands in block format.
+In the EXT version of SorBET, in addition to changing the speed and density during gameplay via voice commands, you can modify the speed and density of the falling objects using commands in block format from the Design Mode..
 
 When you access the **Design Mode** either from **Play Mode** (see [Edit a Game](/docs/sorbet/edit-a-game)) or
 when designing a game from scratch (see [Design a new Game](/docs/sorbet/design-a-game)), in addition
@@ -136,19 +160,20 @@ beginning of the game.
 **Initialize** the speed and density values by simply clicking on the number field and
 changing it.
 
-The initial values already set by the game are **50** for speed and **34** for density.
+The initial values already set by the game are **25** for speed and **30** for density.
 Thus, choosing **lower values decreases** the speed or density respectively, and
 choosing **higher values increases** them.
 
 <Aside>
 	<p>
-		Keep in mind that these values are not absolute but relative to the
-		previous value of the variables.
+		Keep in mind that the speed values are not absolute but relative to the
+		previous value of the variable.
 	</p>
 	<p>
-		E.g. if you set density level to 100 it won’t show all the objects
-		together at once but with a higher rate than they would if the level was
-		34.
+		Density values are percentage values and are related to the remaining number of objects in the game.
+	</p>
+	<p>
+		E.g. if you set the density level to "50" and the total amount of objects is 30, 15 items will appear in each drop (50% of 30). Setting the density to "100" will show all the remaining objects together at once.
 	</p>
 	<ul class="mt-1 list-disc pl-4 font-bold">
 		<li>
